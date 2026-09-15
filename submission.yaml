@@ -1,69 +1,69 @@
 # =============================================================================
 # HACKATHON SUBMISSION METADATA
 # =============================================================================
-# Instructions:
-#   - Fill in ALL required fields (marked with # REQUIRED)
-#   - Optional fields can be left as empty strings ""
-#   - Do NOT rename this file — the evaluation pipeline reads it by name
-#   - Use double quotes around all string values
-# =============================================================================
 
 team:
-  name: ""                             # REQUIRED — e.g., "Orion Squad"
-  track: ""                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
+  name: "QuadCore"
+  track: "AI"
   lead:
-    name: ""                           # REQUIRED — e.g., "Alice Chen"
-    email: ""                          # REQUIRED — e.g., "alice.chen@ibm.com"
+    name: "Pamnani Suhana"
+    email: "26mca096@charusat.edu.in"
   members:
-    - name: ""                         # REQUIRED — Team member 1
-      email: ""
-    - name: ""                         # Add more members by copying the two lines above
-      email: ""
-    - name: ""
-      email: ""
+    - name: "Parmar Vincy"
+      email: "26mca112@charusat.edu.in"
+    - name: "Jataniya Shyama"
+      email: "26mca059@charusat.edu.in"
+    - name: "Pandit Prachi"
+      email: "26mca097@charusat.edu.in"
 
 submission:
-  title: ""                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
+  title: "GridGuard AI"
 
-  problem_statement: >                 # REQUIRED — 1-3 sentences. What problem? Who has it?
-    Replace this text with a concise description of the real-world problem
-    your project addresses and who experiences it.
+  problem_statement: >
+    Power utilities face difficulty predicting transformer and substation
+    failures before they cause power outages. Unexpected equipment failures,
+    changing weather conditions, and limited maintenance resources can lead
+    to service disruptions and delayed response.
 
-  solution_summary: >                  # REQUIRED — 1-3 sentences. What did you build?
-    Replace this text with a clear description of your solution
-    and how it addresses the problem above.
+  solution_summary: >
+    GridGuard AI is an AI-powered Power Outage Prediction and Grid Equipment
+    Failure Advisor that analyzes sensor data, historical failures, weather
+    conditions, and asset information to identify high-risk grid equipment.
+    It provides risk scores, priority levels, maintenance recommendations,
+    and crew pre-positioning suggestions through a real-time dashboard and map.
 
-  key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
-    - ""                               # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-    - ""
-    - ""
-    - ""                               # optional 4th
-    - ""                               # optional 5th
+  key_features:
+    - "Equipment failure risk prediction"
+    - "Grid impact and priority scoring for critical assets"
+    - "Weather risk analysis for outage-prone conditions"
+    - "Maintenance and crew pre-positioning recommendations"
+    - "Real-time dashboard and map for identifying high-risk assets"
 
   tech_stack:
-    languages: []                      # REQUIRED — e.g., ["Python", "TypeScript"]
-    frameworks: []                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
-    databases: []                      # e.g., ["PostgreSQL", "Redis"]
-    other: []                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
+    languages: ["Python", "HTML", "CSS", "JavaScript"]
+    frameworks: ["Flask"]
+    ibm_technologies: ["IBM watsonx.ai"]
+    databases: [""]
+    other: ["GitHub"]
 
-  what_we_are_most_proud_of: >         # Optional but recommended — guides judges to your best work
-    Replace with what aspect of the submission you consider strongest
-    and want judges to pay special attention to.
+  what_we_are_most_proud_of: >
+    We are most proud of combining multiple risk factors such as equipment
+    condition, historical failures, weather conditions, and grid impact into
+    a single priority-driven system. Instead of only predicting failures,
+    GridGuard AI converts predictions into actionable maintenance and crew
+    deployment recommendations.
 
-  known_limitations: >                 # Optional but recommended — be honest about gaps
-    Replace with any known limitations, incomplete features,
-    or shortcuts taken due to time constraints.
+  known_limitations: >
+    The current prototype uses available or simulated data and is not yet
+    connected to live utility sensor systems. Prediction accuracy may improve
+    further with larger real-world datasets, continuous sensor streams, and
+    deployment in an actual utility environment.
 
-# =============================================================================
-# ARTIFACT LOCATIONS
-# These paths are relative to the repo root. Only change if you moved files.
-# =============================================================================
 artifacts:
   source_code: "src/"
   setup_guide: "docs/setup-guide.md"
   architecture_doc: "docs/architecture.md"
-  demo_video: "demo/demo-video-link.txt"   # URL to hosted video (YouTube, Loom, Box)
-  live_demo: "demo/live-demo-url.txt"      # URL to deployed demo (optional)
+  demo_video: "demo/demo-video-link.txt"
+  live_demo: "demo/live-demo-url.txt"
   screenshots: "demo/screenshots/"
   presentation: "presentation/"
