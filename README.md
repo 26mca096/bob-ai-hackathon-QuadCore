@@ -1,6 +1,4 @@
-# 🚀 [GridGuard-AI]
-
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
+# 🚀 GridGuard-AI
 
 ---
 
@@ -17,27 +15,30 @@
 
 ## 🎯 Problem Statement
 
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
+Power utilities need to identify equipment that may fail before it causes a power outage. However, failure risk can depend on multiple factors such as sensor readings, historical failures, weather conditions, and asset information, making it difficult for utility teams to identify the most critical assets quickly.
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
+GridGuard AI addresses this problem by helping utility teams predict equipment failure risks and identify outage-prone assets before failures occur, allowing them to take preventive action.
 
 ---
 
 ## 💡 Solution
 
-> In 2–3 sentences: What did you build? How does it solve the problem above?
+GridGuard AI is an AI-powered Power Outage Prediction & Grid Equipment Failure Advisor that combines sensor data, historical failure records, weather conditions, and asset information to assess the risk of transformer and substation failures.
 
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
+The system generates a **Failure Risk, Grid Impact Score, Weather Risk, and Priority Score** for each asset. Based on these scores, it recommends maintenance actions and crew pre-positioning so that utility teams can focus on high-risk assets and respond proactively.
 
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
+- **Equipment Failure Risk Prediction:** Identifies transformers and substations with a higher probability of failure.
+- **Grid Impact Score:** Estimates the potential impact of an equipment failure on the grid.
+- **Weather Risk Analysis:** Considers weather conditions that may increase the risk of equipment failure.
+- **Priority Score:** Combines risk and impact information to help teams prioritize critical assets.
+- **Maintenance Recommendations:** Suggests preventive maintenance actions for high-risk equipment.
+- **Crew Pre-positioning:** Helps utility teams plan where crews should be positioned before potential outages.
+- **Real-time Dashboard:** Provides a centralized view of equipment risks and important grid information.
+- **Risk Map:** Helps users identify high-risk assets and outage-prone areas geographically.
 
 ---
 
@@ -45,29 +46,28 @@
 
 | Category | Technologies |
 |---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
+| **Languages** | Python, HTML, CSS, JavaScript |
+| **Frameworks** | Flask |
+| **IBM Technologies** | IBM watsonx.ai *(if used in the implementation)* |
+| **Databases** | [Add the database used, if any] |
+| **Other** | GitHub |
 
 ---
 
 ## 📁 Repository Structure
 
-```
-├── src/                  # All source code
-├── docs/                 # Written documentation
+```text
+├── src/                  # Application source code
+├── docs/                 # Project documentation
 │   ├── problem-statement.md
 │   ├── solution-overview.md
 │   ├── architecture.md
 │   └── setup-guide.md
 ├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
+│   ├── screenshots/      # Application screenshots
+│   └── demo-video-link.txt
+├── presentation/         # Project presentation
 └── submission.yaml       # Structured submission metadata
-```
 
 ---
 
